@@ -3,12 +3,13 @@ noremap <Leader><Leader> :action SearchEverywhere<CR>
 Plug 'tpope/vim-surround'
 Plug 'dbakker/vim-paragraph-motion'
 Plug 'machakann/vim-highlightedyank'
-Alternative syntax
-nnoremap \e :e ~/.ideavimrc<CR>
+Plug 'terryma/vim-multiple-cursors'
+set ignorecase
 nnoremap <A-r> :action IdeaVim.ReloadVimRc.reload<CR>
 nnoremap <leader>j :action Terminal.OpenInTerminal<CR>
-set surround
-set ignorecase
+nmap <C-d> <Plug>NextWholeOccurrence
+xmap <C-d> <Plug>NextWholeOccurrence
+xmap <C-x> <Plug>SkipOccurrence
 nnoremap <Leader>sw :action SurroundWith<CR>
 set history=100
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
