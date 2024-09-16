@@ -1,0 +1,20 @@
+let mapleader=" "
+noremap <Leader><Leader> :action SearchEverywhere<CR>
+Plug 'tpope/vim-surround'
+Plug 'dbakker/vim-paragraph-motion'
+Plug 'machakann/vim-highlightedyank'
+Alternative syntax
+nnoremap \e :e ~/.ideavimrc<CR>
+nnoremap <A-r> :action IdeaVim.ReloadVimRc.reload<CR>
+nnoremap <leader>j :action Terminal.OpenInTerminal<CR>
+set surround
+set ignorecase
+nnoremap <Leader>sw :action SurroundWith<CR>
+set history=100
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+vnoremap < <gv
+vnoremap > >gv
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
+" I think it's a better solution
+map U <C-R>
